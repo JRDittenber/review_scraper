@@ -8,10 +8,10 @@
         <h1>Review Results</h1>
         {% for review in reviews %}
             <div class="review">
-                <h2>{{ review['CommentHead'] }}</h2>
-                <p>{{ review['Comment'] }}</p>
-                <p>Rating: {{ review['Rating'] }}</p>
-                <p>By: {{ review['Name'] }}</p>
+                <h2>Rating: {{ review['Rating'] }}</h2>
+                <h3>Name: {{ review['Name'] }}</h3>
+                <h3>Comment Head: {{ review['CommentHead'] }}</h3>
+                <p>Comment: {{ review['Comment'] }}</p>
             </div>
         {% endfor %}
     </body>
