@@ -1,0 +1,6 @@
+Flask
+beautifulsoup4
+selenium
+pandas
+pymongo
+google-api-python-client

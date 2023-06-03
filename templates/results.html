@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Review Results</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <h1>Review Results</h1>
+        {% for review in reviews %}
+            <div class="review">
+                <h2>{{ review['CommentHead'] }}</h2>
+                <p>{{ review['Comment'] }}</p>
+                <p>Rating: {{ review['Rating'] }}</p>
+                <p>By: {{ review['Name'] }}</p>
+            </div>
+        {% endfor %}
+    </body>
+</html>

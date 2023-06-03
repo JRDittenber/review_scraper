@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+<body>
+    <div class="search-container">
+        <h1>Review Scraper</h1>
+        <form action="/search_results" method="post">
+            <input type="text" id="query" name="query" placeholder="Enter your search term...">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <script>
+        for (let i = 0; i < 100; i++) {
+            let star = document.createElement("div");
+            star.className = "star";
+            star.style.top = Math.random() * window.innerHeight + "px";
+            star.style.left = Math.random() * window.innerWidth + "px";
+            document.body.appendChild(star);
+        }
+    </script>
+</body>
+</html>
